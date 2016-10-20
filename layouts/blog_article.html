@@ -1,0 +1,11 @@
+<%= render '/head.*' %>
+
+<div class="blog-main">
+	<div class="blog-post">
+		<h1 class="blog-post-title"><%= item[:title] %></h1>
+		<p class="blog-post-meta">Published on <%= format_date(item[:created_at]) %></p>
+	
+		<%= yield %>
+	</div>
+</div>
+<%= render '/foot.*' %>

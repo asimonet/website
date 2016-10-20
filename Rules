@@ -1,0 +1,129 @@
+##!/usr/bin/env ruby
+#
+#compile '/**/*.html' do
+#	layout '/default.*'
+#end
+#
+## This is an example rule that matches Markdown (.md) files, and filters them
+## using the :kramdown filter. It is commented out by default, because kramdown
+## is not bundled with Nanoc or Ruby.
+##
+##compile '/**/*.md' do
+##	filter :kramdown
+##	layout '/default.*'
+##end
+#
+#route '/**/*.{html,md}' do
+#	if item.identifier =~ '/index.*'
+#	 '/index.html'
+#	else
+#	 item.identifier.without_ext + '/index.html'
+#	end
+#end
+#
+#layout '/**/*', :erb
+
+ignore '/assets/reveals.js/*.{md,json,html}'
+ignore '/assets/reveals.js/node_modules'
+ignore '/assets/reveals.js/test'
+ignore '/assets/reveals.js/.git'
+
+preprocess do
+	paginate_articles
+	items.select{|item| item[:kind] == 'article'}.each{|item| item[:menu_item] = 'News' }
+	
+	fix_author_list
+end
+
+compile '/assets/**/*' do
+end
+
+compile '/**/slides/**.{md,html}' do
+	puts "compiling #{item.identifier.to_s}"
+	if item.identifier.to_s.end_with? '.md'
+		filter :kramdown
+	else
+		filter :erb
+	end
+
+	layout '/reveal_slides.*'
+end
+
+compile '/{news,work,teaching}/**/*.md' do
+	# Allow some articles to be in markdown
+	filter :kramdown
+
+	if item[:kind] == 'article'
+		layout '/blog_article.*'
+	else
+		layout '/page.*'
+	end
+end
+
+compile '/news/**/*' do
+	filter :erb
+	if item[:kind] == 'article'
+		layout '/blog_article.*'
+	else
+		layout '/blog_pagination.*'
+	end
+end
+
+compile '/{work,publications,teaching}.*' do
+	layout '/page.*'
+	filter :erb
+end
+
+compile '/work/**/*' do
+	layout '/page.*'
+	filter :erb
+end
+
+#compile '/**/*' do
+#	write item.identifier.to_s
+#end
+#
+compile '**/*' do
+	if item.binary?
+		# don’t filter binary items
+	else
+		begin
+		filter :erb
+		layout '/default.*'
+	 rescue => details
+		puts "Exception while compiling " + item.identifier
+		raise details
+	 end
+	end
+end
+
+passthrough '/assets/**/*'
+
+route '/assets/**/*' do
+	# /static/foo.html → /foo.html
+	item.identifier.to_s.sub(/\A\/static/, '')
+end
+
+route '/**/*.{html,md}' do
+	if item.identifier =~ '/index.*'
+		 '/index.html'
+	else
+		item.identifier.without_ext + '/index.html'
+	end
+end
+
+route '**/*' do
+	if item.binary?
+		# Write item with identifier /foo/ to /foo.ext
+		#item.identifier.chop + '.' + item[:extension]
+		item.identifier.to_s
+	else
+		# Write item with identifier /foo/ to /foo/index.html
+		item.identifier + 'index.html'
+	end
+end
+
+layout '/blog_pagination.*', :erb
+layout '/publications_list.*', :erb
+
+layout '/**/*', :erb

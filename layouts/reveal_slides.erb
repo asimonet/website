@@ -1,0 +1,79 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="<%= items['/assets/css/open-sans.font'].path %>">
+		<link rel="stylesheet" href="<%= items['/assets/css/quicksand.font'].path %>">
+		
+		<link rel="stylesheet" href="<%= items['/assets/reveal.js/css/reveal.css'].path %>">
+		<link rel="stylesheet" href="<%= items["/assets/reveal.js/css/theme/#{item[:theme]}.css"].path %>">
+		<link rel="stylesheet" href="<%= items['/assets/css/bootstrap.min.css'].path %>">
+		
+		<script type="text/javascript" src="<%= items['/assets/js/jquery.min.js'].path %>"></script>	
+		<title><%= item[:title] %></title>
+		
+		<base target="_blank">
+	</head>
+		<div class="reveal">
+			<div class="slides">
+
+					<%= yield %>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="<%= items['/assets/reveal.js/js/reveal.js'].path %>"></script>
+		<script type="text/javascript">
+		Reveal.initialize({
+			slideNumber: true
+		});
+
+		Reveal.addEventListener('ready', function() {
+			// Add the footer
+			main_div = jQuery('body > div.reveal').append('<div id="footer" class="footer"></div>');
+		});
+
+		Reveal.addEventListener('slidechanged' ,function(event) {
+			// Auto play the first fragment?
+			if(jQuery(event.currentSlide).hasClass('auto-start'))
+				setTimeout(Reveal.nextFragment, 600);
+
+			// Auto play fragments?
+			if(jQuery(event.currentSlide).hasClass('auto-play')) {
+				var delay = Number(jQuery(event.currentSlide).attr('data-auto-play-delay'));
+				if(isNaN(delay))
+					delay = 400;
+
+				console.log("delay: "+delay);
+				var state = Reveal.getState();
+
+				advance_loop = function(i, n, delay) {
+					Reveal.nextFragment();
+
+					if(i++ < n)
+						setTimeout('advance_loop(' + i + ',' + n + ',' + delay + ');', delay);
+					else if(jQuery(Reveal.getCurrentSlide()).hasClass('loop')) {
+						setTimeout(Reveal.setState(state), delay);
+						setTimeout('advance_loop(0,' + n + ',' + delay + ');', 1.5 * delay);
+					}
+				}
+
+				n_fragments = jQuery(event.currentSlide).find('.fragment').length;
+				advance_loop(0, n_fragments, delay);
+			}
+
+			// Footnote?
+			footer = jQuery('div#footer');
+			footer.html('');
+			footnote = jQuery(event.currentSlide).children('.footnote');
+
+			if(footnote.length > 0)
+				footer.html(footnote.html());
+		});
+
+		jQuery(document).ready(function() {
+			$('[data-toggle="popover"]').popover();
+		});
+		</script>
+		
+		<script src="<%= items['/assets/js/bootstrap.min.js'].path %>"></script>
+	</body>
+</html>

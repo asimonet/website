@@ -1,0 +1,22 @@
+<%= render '/head.*' %>
+
+<h1 class="page-title"><%= item[:title] %></h1>
+<div class="blog-main">
+	<% item[:articles].each do |a| %>
+	<% article = @items[a.identifier] %>
+	<div class="blog-post abstract">
+		<%= link_to(article[:title], article, :class => 'blog-post-title h3') %>
+		<p class="blog-post-meta">Published on <%= format_date(article[:created_at]) %></p>
+		<%= construct_abstract(article) %><br />
+		<a href="<%= article.path %>">Read more</a>
+	</div>
+	<% end %>
+</div>
+
+<nav class="text-center">
+	<ul class="pagination">
+		<%= item[:links] %>
+	</ul>
+</nav>
+
+<%= render '/foot.*' %>

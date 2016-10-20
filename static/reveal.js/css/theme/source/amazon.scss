@@ -1,0 +1,249 @@
+/**
+ * Sky theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: #333;
+$headingFont: 'Quicksand', sans-serif;
+$headingColor: #333;
+$headingLetterSpacing: -0.08em;
+$headingTextShadow: none;
+$backgroundColor: #f7fbfc;
+$linkColor: #3b759e;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+$headingTextTransform: capitalize;
+
+$heading1Size: 2.3em;
+$heading2Size: 1.8em;
+$heading3Size: 1.40em;
+$heading4Size: 1.00em;
+
+$selectionBackgroundColor: #ff82e4;
+
+// Fix links so they are not cut off
+.reveal a {
+	line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( #fee6b0, #f7fbfc );
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// current-visible elements use no space after disappearing
+.fragment.current-displayed.visible:not(.current-fragment) {
+    display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.reveal img.icon {
+	border: none;
+	width: 1em;
+	vertical-align:middle;
+	box-shadow: none;
+	margin-right: .2em;
+}
+
+.reveal .slides img {
+	border: none;
+	margin: 30px;
+}
+
+.reveal .slides img.clean {
+	border: none;
+	box-shadow: none;
+}
+
+.reveal .slides li li {
+	font-size: 80%;
+}
+
+.reveal .slides blockquote {
+	box-shadow: none;
+}
+
+.reveal .slides blockquote:before {
+	display: block;
+	font-family: Georgia, serif;
+	padding-left: 10px;
+	content: '\201C';
+	font-size: 5em;
+	position: absolute;
+	z-index: -10;
+	left: -80px;
+	top: -40px;
+	color: #7a7a7a;
+}
+
+.reveal th {
+	font-style: italic;
+	font-weight: 500;
+}
+
+.reveal .small {
+	font-size: 80%;
+}
+
+.reveal .large {
+	font-size: 140%;
+}
+
+.reveal .tiny{
+	font-size: 40%;
+}
+
+.reveal .left-column {
+	float: left;
+	display: inline-block;
+}
+
+.reveal .right-column {
+	float:right;
+	display: inline-block;
+}
+
+.reveal .slides {
+	text-align: left;
+}
+
+.reveal .slides .align-center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.reveal .slides  h1,
+.reveal .slides  h2,
+.reveal .slides  h3,
+.reveal .slides  h4,
+.reveal .slides  h5,
+.reveal .slides  h6,
+{
+	text-align: center;
+}
+
+.reveal .row {
+	clear: both;
+	display: block;
+}
+
+.reveal .slides span.round-box {
+	border-radius: 15px;
+	padding: 20px;
+	margin: 6px;
+	font-size: 40px;
+	width: 200px;
+	height: 90px;
+	color: #ffffff;
+	font-weight: bold;
+	vertical-align: center;
+	text-align: center;
+	display: inline-block;
+}
+
+.reveal .example {
+	font-style: italic;
+	font-size: 80%;
+	text-align: left;
+	margin-left: 20px;
+	vertical-align: center; // FIXME
+}
+
+.reveal .definition {
+	font-style: italic;
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+.reveal .TBC {
+	color: #ffffff;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+div#footer {
+	position: fixed;
+	bottom: 10px;
+	left:10px;
+	font-size: 0.8em;
+	height: 110px;
+	display: block;
+}
+
+.reveal .slides .footnote {
+	display: none;
+}
+
+.monospace {
+	font-family: monospace;
+}
+
+span[data-toggle="popover"] {
+	border: dashed 3px #FF5C5C;
+	border-radius: 5px;
+	padding: 0px 2px 0px 2px;
+}
+
+span[data-toggle="popover"]:hover {
+	border: none;
+	background-color: #FF5C5C;
+}
+
+.reveal .slides div.popover {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	background-color: #fff;
+	padding: 1px;
+	border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.reveal .slides div.popover-content {
+	padding: 8px 14px 8px 14px;
+}
+
+.reveal .slides h3.popover-title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-align: left;
+	border: 0px 0px 1px 0px;
+	padding: 8px 14px 8px 14px;
+	margin: 0px;
+}
+
+.reveal .slides span.line-numbers {
+	margin-right: 6px;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently
+	                                not supported by any browser */
+}

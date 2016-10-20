@@ -1,0 +1,79 @@
+		</div>
+	</div>
+	
+<footer class="blog-footer">
+	<script type='text/javascript'>
+	$(document).ready(function() {
+		$("a[href='#scroll-top']").click(function() {
+			$("html, body").animate({ scrollTop: 0 }, "swing");
+			return false;
+		});
+
+		<% if @item.identifier == '/index.html' %>
+			/*
+			function debounce(func, wait, immediate) {
+				var timeout;
+				return function() {
+					var context = this, args = arguments;
+					var later = function() {
+						timeout = null;
+						if (!immediate) func.apply(context, args);
+					};
+					var callNow = immediate && !timeout;
+					clearTimeout(timeout);
+					timeout = setTimeout(later, wait);
+					if (callNow) func.apply(context, args);
+				};
+			};
+
+			var sidebar = $('.blog-sidebar');
+			var previousLeft = sidebar.offset().left;
+			console.log("Initial position: " + previousLeft);
+
+			$(document).on('scroll', debounce(function(e) {
+				console.log("top: " + $(document).scrollTop());
+console.log(sidebar.offset().left + " : " + previousLeft);
+
+				if($(document).scrollTop() > 200) {
+					if(!sidebar.hasClass('fixed-sidebar')) {
+						previousLeft = sidebar.offset().left;
+						sidebar.addClass('fixed-sidebar');
+						sidebar.offset({left: previousLeft});
+					}
+				}
+				else {
+					sidebar.removeClass('fixed-sidebar');
+				}
+			}, 5));
+			*/
+		<% end %>
+	});
+	</script>
+	<p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+	<p>
+		<a href="#scroll-top">Back to top</a>
+	</p>
+</footer>
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="<%= items['/assets/js/jquery.min.js'].path %>"></script>
+	<script src="<%= items['/assets/js/bootstrap.min.js'].path %>"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="<%= items['/assets/js/ie10-viewport-bug-workaround.js'].path %>"></script>
+	
+	<script>
+/*
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-27551801-1', 'auto');
+	ga('send', 'pageview');
+*/
+</script>
+  </body>
+</html>

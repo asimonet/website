@@ -1,0 +1,31 @@
+<h1><%= group_name %></h1>
+<ul class="publications">
+<% publications.each do |pub| %>
+	<li>
+	<a name="<%= pub[:key] %>"></a><%= pub[:author] %> <b><em><%= pub[:title] %></em></b>.
+
+		<% if pub[:type] == :techreport %>
+			Research Report
+		<% else %>
+			<% if pub[:type] == :poster %>
+				Poster <em>in</em>
+			<% else %>
+				<em>In</em>
+			<% end %>
+			<% if pub[:journal] then %>
+				<%= pub[:journal] %>.
+			<% elsif pub[:booktitle] then %>
+				<%= pub[:booktitle] %><% if pub[:series] then %> (<em><%= pub[:series] %></em>)<% end %>.
+			<% end %>
+		<% end %>
+
+		<% if pub[:pdf] then %>
+			<a href="<%= pub[:pdf] %>">PDF</a>
+		<% end %>
+		
+		<% if pub[:note] then %>
+			<%= pub[:note] %>
+		<% end %>
+	</li>
+<% end %>
+</ul>
