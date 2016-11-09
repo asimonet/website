@@ -22,6 +22,7 @@
 #end
 #
 #layout '/**/*', :erb
+#
 
 ignore '/assets/reveals.js/*.{md,json,html}'
 ignore '/assets/reveals.js/node_modules'
@@ -29,6 +30,8 @@ ignore '/assets/reveals.js/test'
 ignore '/assets/reveals.js/.git'
 
 preprocess do
+	load_config
+
 	paginate_articles
 	items.select{|item| item[:kind] == 'article'}.each{|item| item[:menu_item] = 'News' }
 	

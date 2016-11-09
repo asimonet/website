@@ -82,6 +82,3 @@ checks:
     # E.g.:
     #   exclude: ['^/server_status']
     exclude: []
-
-page_size: 5
-abstract_marker: '<!--more-->'

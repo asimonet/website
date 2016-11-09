@@ -1,0 +1,43 @@
+## Identity
+
+# Prefix for all page title
+site_title: Anthony SIMONET
+   
+author_name: Anthony SIMONET
+author_email: firstname.lastname@inria.fr
+author_phone: "+33 (0) 2 51 85 82 38"
+author_skype: anthony-simonet
+
+# Mailing address
+# Two whitespaces ('  ') will be replaced with newline charactters.
+author_address: >
+   École des Mines 
+   Bureau B217  
+   4 rue Alfred Kastler  
+   BP 20 722  
+   44 307 Nantes Cedex 03  
+   France
+
+author_linkedin: anthonysimonet
+
+# Relative path to a gpg-key file
+author_pgp_file: content/asimonet.asc
+
+# Links
+links:
+  - "Inria|http://www.inria.fr"
+  - "ENS Lyon|http://www.ens-lyon.eu"
+  - "LIP|http://www.ens-lyon.fr/LIP"
+  - "Avalon|http://avalon.ens-lyon.fr/"
+  - "École des Mines|http://www.mines-nantes.fr/"
+  - "Active Data|http://active-data.gforge.inria.fr"
+
+## Blogging
+
+# Number of articles per page in blog index pages
+page_size: 5
+
+# String to mark the end of a blog-entry abstract
+# Only text before the marker will be displayed on the blog
+# index pages
+abstract_marker: '<!--more-->'

@@ -38,37 +38,29 @@ author: Anthony SIMONET
 
 	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 		<div class="sidepar-module portrait">
-			<img src="<%= items['/assets/img/anthony.jpg'].path %>" alt="Picture of Anthony SIMONET" width="80%" />
+			<img src="<%= items['/assets/img/portrait.jpg'].path %>" alt="<%= @config[:author_name] %>" width="80%" />
 		</div>
 		<div class="sidebar-module sidebar-module-inset">
 			<h4>Contact</h4>
 			<p>If you are a human, please feel free to contact me.</p>
 			<address>
-				<strong>Email:</strong> <em>firstname.lastname@inria.fr</em>
-				<strong>Phone:</strong>&nbsp;+33 (0) 2 51 85 82 38
-				<strong>Skype:</strong>&nbsp;<em>anthony-simonet</em>
+				<strong>Email:</strong> <em><%= @config[:author_email] %></em>
+				<strong>Phone:</strong>&nbsp;<%= @config[:author_phone] %>
+				<strong>Skype:</strong>&nbsp;<em><%= @config[:author_skype] %></em>
 				<strong>Mailing address:</strong><br />
-				<em>École des Mines<br />
-				Bureau B217<br />
-				4 rue Alfred Kastler<br />
-				BP 20 722<br />
-				44 307 Nantes Cedex 03<br />
-				France</em><br/>
+				<em><%= @config[:author_address].gsub(/\s\s/, '<br />') %></em><br/>
 				<strong>PGP Key:</strong>&nbsp;<a href="asimonet.asc">download</a>
 			</address>
 		</div>
 		<div class="sidebar-module">
 			<h4>Links</h4>
 			<ol class="list-unstyled">
-				<li><a href="http://www.inria.fr">Inria</a></li>
-				<li><a href="http://www.ens-lyon.eu">ENS Lyon</a></li>
-				<li><a href="http://www.ens-lyon.fr/LIP">LIP</a></li>
-				<li><a href="http://avalon.ens-lyon.fr/">Avalon</a></li>
-				<li><a href="http://www.mines-nantes.fr/">École des Mines</a></li>
-				<li><a href="http://active-data.gforge.inria.fr">Active Data</a></li>
+				<% @config[:links].each do |link| %>
+				<li><a href="<%= link.url %>" target="_BLANK"><%= link.label %></a></li>
+				<% end %>
 			</ol>
 			<span>
-				<a href="https://fr.linkedin.com/in/anthonysimonet" target="_BLANK"><img src="<%= items['/assets/img/logos/linkedin.png'].path %>" title="My LinkedIn profile" alt="LinkedIn" /></a>
+				<a href="https://fr.linkedin.com/in/<%= @config[:author_linkedin] %>" target="_BLANK"><img src="<%= items['/assets/img/logos/linkedin.png'].path %>" title="My LinkedIn profile" alt="LinkedIn" /></a>
 			</span>
 		</div>
 	</div><!-- /.blog-sidebar -->
