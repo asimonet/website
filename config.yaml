@@ -18,7 +18,16 @@ author_address: >
    44 307 Nantes Cedex 03  
    France
 
-author_linkedin: anthonysimonet
+social:
+  - id: linkedin
+    name: LinkedIn
+    url: https://fr.linkedin.com/in/anthonysimonet
+  - id: scholar
+    name: Google Scholar
+    url: https://scholar.google.fr/citations?user=wmGPuSgAAAAJ
+  - id: github
+    name: GitHub
+    url: https://github.com/asimonet
 
 # Relative path to a gpg-key file
 author_pgp_file: content/asimonet.asc

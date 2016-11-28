@@ -59,8 +59,12 @@ author: Anthony SIMONET
 				<li><a href="<%= link.url %>" target="_BLANK"><%= link.label %></a></li>
 				<% end %>
 			</ol>
-			<span>
-				<a href="https://fr.linkedin.com/in/<%= @config[:author_linkedin] %>" target="_BLANK"><img src="<%= items['/assets/img/logos/linkedin.png'].path %>" title="My LinkedIn profile" alt="LinkedIn" /></a>
+			<span id="social">
+            <% @config[:social].each do |service| %>
+				<a href="<%= service['url'] %>"
+               target="_BLANK"><img src="<%= items["/assets/img/logos/#{service['id']}.png"].path %>"
+               title="My <%= service['name'] %> profile" alt="<%= service['name'] %>" /></a>
+            <% end %>
 			</span>
 		</div>
 	</div><!-- /.blog-sidebar -->
