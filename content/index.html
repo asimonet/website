@@ -19,7 +19,7 @@ author: Anthony SIMONET
 
 		<h1>Research interests</h1>
 
-		As part of the <a href="http://beyondtheclouds.github.io" target="_BLANK">Discovery</a> initiative, my research currently focuses on
+		As part of the <a href="http://beyondtheclouds.github.io" target="_blank">Discovery</a> initiative, my research currently focuses on
 		massively distributed cloud computing infrastructures. In particular, I study the energy model of these platforms and the
 		management of data (virtual appliances and user data) in a context where the infrastructure is dynamic (datacenters may appear and
 		disappear at any time) and users are mobile.<br /><br />
@@ -32,8 +32,8 @@ author: Anthony SIMONET
 		multiple systems and infrastructures. Active Data is also a programming model and an implementation that helps developing managing the life
 		cycle of distributed data. The idea borrows from event programming while relying on data transition events. The resulting programming model
 		
-		is data-centric and implicitly parallel. To learn more about <a href="http://active-data.gforge.inria.fr" target="_BLANK">Active Data</a>
-		you can visit the brand website at <a href="http://active-data.gforge.inria.fr" target="_BLANK">http://active-data.gforge.inria.fr</a>.
+		is data-centric and implicitly parallel. To learn more about <a href="http://active-data.gforge.inria.fr" target="_blank">Active Data</a>
+		you can visit the brand website at <a href="http://active-data.gforge.inria.fr" target="_blank">http://active-data.gforge.inria.fr</a>.
 	</div><!-- /.blog-main -->
 
 	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -56,13 +56,13 @@ author: Anthony SIMONET
 			<h4>Links</h4>
 			<ol class="list-unstyled">
 				<% @config[:links].each do |link| %>
-				<li><a href="<%= link.url %>" target="_BLANK"><%= link.label %></a></li>
+				<li><a href="<%= link.url %>" target="_blank"><%= link.label %></a></li>
 				<% end %>
 			</ol>
 			<span id="social">
             <% @config[:social].each do |service| %>
 				<a href="<%= service['url'] %>"
-               target="_BLANK"><img src="<%= items["/assets/img/logos/#{service['id']}.png"].path %>"
+               target="_blank"><img src="<%= items["/assets/img/logos/#{service['id']}.png"].path %>"
                title="My <%= service['name'] %> profile" alt="<%= service['name'] %>" /></a>
             <% end %>
 			</span>

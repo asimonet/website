@@ -8,7 +8,7 @@ I have been kindly invited to talk during a seminar of the BD research group of 
 The seminar will take place on September 15th in INSA de Lyon, Blaise Pascal building, room 501.337.
 
 The talk will cover the research conducted during my Ph.D and thus it will contain a great deal of
-[Active Data](http://active-data.gforge.inria.fr){:target="_BLANK"}.<!--more-->
+[Active Data](http://active-data.gforge.inria.fr){:target="_blank"}.<!--more-->
 
 <br />
 See you there!

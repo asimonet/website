@@ -6,7 +6,7 @@ created_at: 2016/02/09
 
 In the context of the Discovery Initiative, we are currently seeking an urdergrad
 intern to work on our prototype of massively distributed OpenStack at the
-[École des Mines de Nantes](http://www.mines-nantes.fr){:target="_BLANK"}.
+[École des Mines de Nantes](http://www.mines-nantes.fr){:target="_blank"}.
 <!--more-->
 
 <br />

@@ -5,11 +5,11 @@ created_at: 2015/07/13
 ---
 
 Today I am very excited to announce that a large paper about
-[Active Data](http://active-data.gforge.inria.fr){:target="_BLANK"} has been published in
+[Active Data](http://active-data.gforge.inria.fr){:target="_blank"} has been published in
 *[Future Generation Computer Systems](http://www.journals.elsevier.com/future-generation-computer-systems/)*.
 
-This paper, co-authored with [Gilles FEDAK](http://graal.ens-lyon.fr/~gfedak/){:target="_BLANK"}
-and [Matei RIPEANU](http://www.ece.ubc.ca/~matei/){:target="_BLANK"} from [UBC](https://www.ubc.ca/){:target="_BLANK"} is meant to be the reference publication about Active Data.<!--more--> It details many
+This paper, co-authored with [Gilles FEDAK](http://graal.ens-lyon.fr/~gfedak/){:target="_blank"}
+and [Matei RIPEANU](http://www.ece.ubc.ca/~matei/){:target="_blank"} from [UBC](https://www.ubc.ca/){:target="_blank"} is meant to be the reference publication about Active Data.<!--more--> It details many
 theoritical and technical details about the life cycle meta model, the implementation and the programming model.
 Several examples illustrates how the whole system works and can be used as model for adopters waiting for tutorials.
 

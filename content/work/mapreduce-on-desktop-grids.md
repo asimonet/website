@@ -11,7 +11,7 @@ The MapReduce implementation on top of BitDew is the result of the work of sever
 its ability to work on Desktop grid architectures and benefit of close-to-free computing and storage resources.
 
 A tutorial is available [here](/misc/bitdew-mapreduce/ WordCount Tutorial). It will guide you
-through the required steps to run the WordCount experiment on [Grid'5000](http://www.grid5000.fr){:target="_BLANK"}. Below are the files you will
+through the required steps to run the WordCount experiment on [Grid'5000](http://www.grid5000.fr){:target="_blank"}. Below are the files you will
 need.
 
 # Files
@@ -89,7 +89,7 @@ whenever all final result files have been received.
 
 # Related publications
 [Towards MapReduce For Desktop Grid Computing](http://graal.ens-lyon.fr/~gfedak/thesis/xtremmapreduce.3pgcic10.pdf "Towards MapReduce for Desktop Grid
-Computing"){:taget="_BLANK"}
+Computing"){:taget="_blank"}
 
 [Distributed Results Checking for MapReduce in Volunteer Computer](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6009055 "Distributed Results
-Checking for MapReduce in Volunteer Computer"){:target="_BLANK"}
+Checking for MapReduce in Volunteer Computer"){:target="_blank"}
