@@ -129,7 +129,7 @@ h6, .h6 {
 	width: 220px; /* plus margin: 260px */
 	margin-left: 40px;
 	position: static;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .fixed-sidebar {
