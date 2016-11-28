@@ -5,6 +5,9 @@ include Nanoc::Helpers::LinkTo
 def paginate_articles
 	article_groups = []
 	articles_to_paginate = sorted_articles
+
+   puts "Paginating #{articles_to_paginate.size} articles"
+
 	unpaginated = articles_to_paginate.clone
 	
 	until articles_to_paginate.empty?
@@ -25,7 +28,7 @@ def paginate_articles
 		
 		# If this is the first page, construct a second page with a simplified url
 		if i == 0 then
-			@items.create('', attributes, identifier)
+			@items.create('', attributes.clone, identifier)
 		end
 		
 		# This one is always constructed
@@ -34,7 +37,6 @@ def paginate_articles
 		# Setting a parent allows the menu to be displayed correctly
 		attributes[:parent] = '/news/'
 		@items.create('', attributes, identifier)
-		puts @items[identifier][:parent]
 	end
 end
 

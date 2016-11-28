@@ -10,16 +10,31 @@ Markdown
 
 ## Installing and compiling
 
-To compile the website you must first install Nanoc:
+To compile the website you must first install the dependencies using
+[Bundler](http://bundler.io/). If you don't already have it installed:
 
 ```
-$ gem install nanoc
+$ gem install bundler
 ```
 
-To serve the website locally, you must also install _adsf_:
+Then install the dependencies:
+
 ```
-$ gem install xxx
-$ nanoc view
+$ bundler install
+```
+
+To compile the website:
+
+```
+$ bundle exec nanoc
+```
+
+The generated files will be put in the `output` directory.
+
+The website can then be served locally:
+
+```
+$ bundle exec nanoc view
 ```
 
 This will serve the website at <http://localhost:3000>.
