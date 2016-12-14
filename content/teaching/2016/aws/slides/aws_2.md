@@ -122,8 +122,9 @@ decoupled components through a network communication protocol.">_Service Oriente
   - us-west-1 (Oregon)
   - us-west-2 (Northern California)
   - GovCloud (limited to the US Government and their agencies)
--Europe
+- Europe
   - eu-west-1 (Ireland)
+  - eu-west-2 (London)
   - eu-central-1 (Frankfurt)
 </div>
 <div class="right-column small" style="width: 50%;">
@@ -208,13 +209,15 @@ only.
 <section>
 # Region layout
 
-## Example: eu-west-1 region
+Each region is composed of **multiple isolated Data Centers** called _Availability Zones_
+
+### Example: eu-west-1 region
 
 <div style="text-align: center;">
 ![eu-west-1 map](../../img/eu-west-1.jpg)
 </div>
 
-Average distance between two DCs: &#8776;40km.
+Average distance between two AZs: &#8776;40km.
 </section>
 </section>
 
