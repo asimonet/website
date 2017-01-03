@@ -61,9 +61,11 @@ author: Anthony SIMONET
 			</ol>
 			<span id="social">
             <% @config[:social].each do |service| %>
-				<a href="<%= service['url'] %>"
-               target="_blank"><img src="<%= items["/assets/img/logos/#{service['id']}.png"].path %>"
-               title="My <%= service['name'] %> profile" alt="<%= service['name'] %>" /></a>
+            <% title = service['title'] || "My #{service['name']} profile" %>
+				<a href="<%= service['url'] %>" target="_blank">
+               <img src="<%= items["/assets/img/logos/#{service['id']}.png"].path %>"
+                  title="<%= title %>" alt="<%= service['name'] %>" />
+            </a>
             <% end %>
 			</span>
 		</div>

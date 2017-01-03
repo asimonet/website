@@ -28,6 +28,10 @@ social:
   - id: github
     name: GitHub
     url: https://github.com/asimonet
+  - id: telegram
+    name: Telegram
+    url: https://telegram.me/asimonet
+    title: Contact me on Telegram
 
 # Relative path to a gpg-key file
 author_pgp_file: content/asimonet.asc
