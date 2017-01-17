@@ -2,6 +2,7 @@
 kind: article
 title: Talk at the University of Chicago
 created_at: 2013/11/20
+tags: talks
 ---
 
 I will give a talk at the University of Chicago Computation Institute on Tuesday November 26th at 12pm.

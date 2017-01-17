@@ -2,6 +2,7 @@
 kind: article
 title: Publication à ComPAS'2014
 created_at: 2014/04/28
+tags: publications conferences
 ---
 
 J'ai récemment présenté un article à la conférence francophone

@@ -2,6 +2,7 @@
 kind: article
 title: Seminar for the BD research group at LIRIS
 created_at: 2015/09/02
+tags: talks
 ---
 
 I have been kindly invited to talk during a seminar of the BD research group of the LIRIS laboratory in Lyon.

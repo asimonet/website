@@ -2,6 +2,7 @@
 kind: article
 title: Ph.D defense
 created_at: 2015/06/30
+tags: talks publications
 ---
 
 Time has come!

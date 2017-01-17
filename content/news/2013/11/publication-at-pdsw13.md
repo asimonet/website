@@ -2,6 +2,7 @@
 kind: article
 title: Publication at PDSW'13
 created_at: 2013/11/04
+tags: publications conferences
 ---
 
 On Monday November 18th 2013 I will present a paper about Active Data at the [8th Parallel

@@ -2,6 +2,7 @@
 kind: article
 title: Long Active Data Paper Published in FGCS
 created_at: 2015/07/13
+tags: publications journals
 ---
 
 Today I am very excited to announce that a large paper about

@@ -2,6 +2,7 @@
 kind: article
 title: Paper at Intercloud workshop
 created_at: 2016/03/28
+tags: publications conferences
 ---
 
 Next week I will be at the

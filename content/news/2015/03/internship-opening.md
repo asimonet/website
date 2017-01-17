@@ -2,6 +2,7 @@
 kind: article
 title: Internship opening
 created_at: 2015/03/25
+tags: positions
 ---
 
 Gilles Fedak, Frédéric Suter and I are currently looking for an intern to work with us on Active Data and

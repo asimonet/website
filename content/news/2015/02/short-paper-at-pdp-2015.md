@@ -2,6 +2,7 @@
 kind: article
 title: Short paper at PDP 2015
 created_at: 2015/02/20
+tags: publications conferences
 ---
 
 PDP 2015 will take place in Turku, Finland from March 4th to 6th. I will present our short paper entitled

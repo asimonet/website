@@ -267,3 +267,18 @@ h4, .h4 {
 .service-list li {
 	line-height: 1.4;
 }
+
+/*
+ * Labels
+ */
+div.tags {
+	margin-bottom: 5px;
+}
+
+.label { background-color: #777; }
+.label-publications { background-color: #337ab7; }
+.label-conferences { background-color: #5cb85c; }
+.label-journals { background-color: #1da31d; }
+.label-talks { background-color: #f0ad4e; }
+.label-positions { background-color: #f062f0; }
+

@@ -2,6 +2,7 @@
 kind: article
 title: Internship on OpenStack @ Discovery
 created_at: 2016/02/09
+tags: positions
 ---
 
 In the context of the Discovery Initiative, we are currently seeking an urdergrad

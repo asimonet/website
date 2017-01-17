@@ -2,6 +2,7 @@
 kind: article
 title: First publication
 created_at: 2012/04/24
+tags: publications conferences
 ---
 
 It is called &ldquo;*Towards Scalable Data Management for Map-Reduce-based Data-Intensive Applications on Cloud and Hybrid
