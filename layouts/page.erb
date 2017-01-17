@@ -1,6 +1,8 @@
 <%= render '/head.*' %>
 
+<% if item[:menu_item] != 'Home' %>
 <h1 class="page-title"><%= item[:title] %></h1>
+<% end %>
 
 			<%= yield %>
 

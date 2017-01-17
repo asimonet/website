@@ -10,7 +10,7 @@
 	<meta name="author" content="Anthony SIMONET">
 
 	<title>Anthony SIMONET − <%= @item[:title] %></title>
-	
+
 	<link href="<%= items['/assets/css/bootstrap.min.css'].path %>" rel="stylesheet" type="text/css">
 	<link href="<%= items['/assets/css/blog.css'].path %>" rel="stylesheet" type="text/css">
 	<link href="<%= items['/assets/css/stylesheet.css'].path %>" rel="stylesheet" type="text/css">
@@ -33,5 +33,5 @@
 			</nav>
 		</div>
 	</div>
-	<div id="main">
+   <div id="main"<% if item[:menu_item] == 'Home' %> class="homepage"<% end %>>
 		<div class="container">

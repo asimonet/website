@@ -19,6 +19,37 @@ h6, .h6 {
   color: #333;
 }
 
+h1, .h1 {
+	font-size: 36px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+h1:first-child, .h1:first-child {
+	margin-top: 15px;
+}
+
+h2, .h2 {
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h2:first-child, .h2:first-child {
+	margin-top: 10px;
+}
+
+h3, .h3 {
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+}
+
+h4, .h4 {
+	font-size: 20px;
+}
+
 
 /*
  * Override Bootstrap's default container.
@@ -101,12 +132,13 @@ h6, .h6 {
  */
 
 .blog-main {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.2;
 }
 
-.blog-main p {
-	font-size: 18px;
+.homepage .blog-main {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 /* Sidebar modules for boxing content */
@@ -154,19 +186,19 @@ h6, .h6 {
 }
 
 @media (min-width: 768px) {
-	.blog-main {
+	.homepage .blog-main {
 		width: 450px;
 	}
 }
 
 @media (min-width: 992px) {
-	.blog-main {
+	.homepage .blog-main {
 		width: 690px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.blog-main {
+	.homepage .blog-main {
 		width: 710px;
 	}
 }
@@ -213,6 +245,7 @@ h6, .h6 {
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
@@ -226,4 +259,11 @@ h6, .h6 {
 
 .publication-list li {
 	margin-bottom: 10px;
+}
+
+/*
+ * Service
+ */
+.service-list li {
+	line-height: 1.4;
 }

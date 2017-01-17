@@ -16,7 +16,7 @@ theme: amazon
 
 ### Anthony Simonet
 </section>
-	
+
 <section>
 # About this module
 

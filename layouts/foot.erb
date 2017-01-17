@@ -1,9 +1,28 @@
 		</div>
 	</div>
-	
+
+   <% if not item[:background].nil? %>
+      <img src="<%= items["/assets/img/background/#{item[:background]}"].path %>" alt="" title="" class="inlay" />
+   <% end %>
+
 <footer class="blog-footer">
 	<script type='text/javascript'>
 	$(document).ready(function() {
+      $('img.inlay').css("margin-right",-350);
+      $('img.inlay').css("display", "block");
+      $('img.inlay').animate({marginRight:0}, 200, function(){running=0;});
+
+      $(window).scroll(function() {
+         var img = $('img.inlay');
+         if(img === undefined)
+            return;
+
+         var per = $(window).scrollTop() / $(document).height();
+         var theta = per * Math.PI * 2;
+         img.css({transform: 'rotate(' + theta + 'rad)' });
+         img.css('margin-top', per * 1000);
+      });
+
 		$("a[href='#scroll-top']").click(function() {
 			$("html, body").animate({ scrollTop: 0 }, "swing");
 			return false;
@@ -64,7 +83,7 @@ console.log(sidebar.offset().left + " : " + previousLeft);
 	<script src="<%= items['/assets/js/bootstrap.min.js'].path %>"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="<%= items['/assets/js/ie10-viewport-bug-workaround.js'].path %>"></script>
-	
+
 	<script>
 /*
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -9,11 +9,11 @@ def paginate_articles
    puts "Paginating #{articles_to_paginate.size} articles"
 
 	unpaginated = articles_to_paginate.clone
-	
+
 	until articles_to_paginate.empty?
 		article_groups << articles_to_paginate.slice!(0..@config[:page_size]-1)
 	end
-	
+
 	article_groups.each_with_index do |subarticles, i|
 		title = 'News'
 		identifier = '/news/'
@@ -24,13 +24,14 @@ def paginate_articles
 			:menu_order => 10,
 			:articles => subarticles,
 			:links => links,
+         :background => 'news.png'
 		}
-		
+
 		# If this is the first page, construct a second page with a simplified url
 		if i == 0 then
 			@items.create('', attributes.clone, identifier)
 		end
-		
+
 		# This one is always constructed
 		title += " (page #{i+1})"
 		identifier += "archive/#{i+1}/"
@@ -54,11 +55,11 @@ def pagination_links(articles, id_prefix, current_page)
 		content += '<span aria-hidden="true">&laquo;</span></a>'
 	end
 	content += "</li>\n"
-	
+
 	for i in 1..n_pages do
 		clazz = ''
 		clazz = 'class="active"' if i == (current_page+1)
-		
+
 		content += "<li #{clazz}><a href=\"#{id_prefix}#{i}\">#{i}</a></li>\n"
 	end
 
@@ -78,7 +79,7 @@ end
 
 def construct_abstract(article)
 	pos =  article.compiled_content =~ /#{@config[:abstract_marker]}/
-	
+
 	if pos.nil?
 		return article.compiled_content
 	else
@@ -89,7 +90,7 @@ end
 def format_date(date)
 	parsed = Date.parse(date)
 	day = parsed.strftime('%-d')
-	
+
 	case day
 		when '1', '21', '31' then
 			day += 'st'
@@ -100,6 +101,6 @@ def format_date(date)
 		else
 			day += 'th'
 	end
-	
+
 	return parsed.strftime("%A %B #{day} %Y")
 end

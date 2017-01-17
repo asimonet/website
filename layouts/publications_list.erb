@@ -1,4 +1,4 @@
-<h1><%= group_name %></h1>
+<h2><%= group_name %></h2>
 <ul class="publications">
 <% publications.each do |pub| %>
 	<li>
@@ -22,7 +22,7 @@
 		<% if pub[:pdf] then %>
 			<a href="<%= pub[:pdf] %>">PDF</a>
 		<% end %>
-		
+
 		<% if pub[:note] then %>
 			<%= pub[:note] %>
 		<% end %>

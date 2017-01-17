@@ -34,7 +34,7 @@ preprocess do
 
 	paginate_articles
 	items.select{|item| item[:kind] == 'article'}.each{|item| item[:menu_item] = 'News' }
-	
+
 	fix_author_list
 end
 
@@ -52,7 +52,7 @@ compile '/**/slides/**.{md,html}' do
 	layout '/reveal_slides.*'
 end
 
-compile '/{news,work,teaching}/**/*.md' do
+compile '/{news}/**/*.md' do
 	# Allow some articles to be in markdown
 	filter :kramdown
 
@@ -72,9 +72,16 @@ compile '/news/**/*' do
 	end
 end
 
-compile '/{work,publications,teaching}.*' do
+compile '/*.{md,htm,html}' do
+	puts "compiling #{item.identifier.to_s}"
+	if item.identifier.to_s.end_with? '.md'
+		filter :kramdown
+		puts "#{item.identifier} compiled with :kramdown"
+	else
+		filter :erb
+	end
+
 	layout '/page.*'
-	filter :erb
 end
 
 compile '/work/**/*' do
@@ -82,21 +89,17 @@ compile '/work/**/*' do
 	filter :erb
 end
 
-#compile '/**/*' do
-#	write item.identifier.to_s
-#end
-#
 compile '**/*' do
 	if item.binary?
 		# don’t filter binary items
 	else
 		begin
-		filter :erb
-		layout '/default.*'
-	 rescue => details
-		puts "Exception while compiling " + item.identifier
-		raise details
-	 end
+			filter :erb
+			layout '/default.*'
+		 rescue => details
+			puts "Exception while compiling " + item.identifier
+			raise details
+		 end
 	end
 end
 
