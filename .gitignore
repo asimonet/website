@@ -2,3 +2,4 @@ output
 .*.swp
 .DS_Store
 crash.log
+Gemfile.lock
