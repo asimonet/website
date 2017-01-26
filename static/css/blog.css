@@ -222,13 +222,17 @@ h4, .h4 {
 
 .blog-post {
   margin-bottom: 60px;
+  text-align: justify;
+  text-justify: distribute;
+  line-height: 1.3535353535353535353535353535353535353535353535353535353535353535353535;
 }
 .blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
+  margin-left: 0px;
+  font-size: 25px;
 }
 .blog-post-meta {
-  margin-bottom: 20px;
+  margin-top: 6px;
+  margin-bottom: 15px;
   color: #999;
   font-style: italic;
 }
