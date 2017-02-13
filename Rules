@@ -52,25 +52,28 @@ compile '/**/slides/**.{md,html}' do
 	layout '/reveal_slides.*'
 end
 
-compile '/{news}/**/*.md' do
+compile '/{news}/**/*.{html,md}' do
+	puts "compiling #{item.identifier.to_s}"
+
 	# Allow some articles to be in markdown
-	filter :kramdown
-
-	if item[:kind] == 'article'
-		layout '/blog_article.*'
+	if item.identifier.to_s.end_with? '.md'
+		filter :kramdown
 	else
-		layout '/page.*'
+		filter :erb
 	end
-end
 
-compile '/news/**/*' do
-	filter :erb
 	if item[:kind] == 'article'
 		layout '/blog_article.*'
 	else
 		layout '/blog_pagination.*'
 	end
 end
+
+compile '/news/**/*' do
+	filter :erb
+	layout '/blog_pagination.*'
+end
+
 
 compile '/*.{md,htm,html}' do
 	puts "compiling #{item.identifier.to_s}"
