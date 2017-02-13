@@ -224,11 +224,12 @@ h4, .h4 {
   margin-bottom: 60px;
   text-align: justify;
   text-justify: distribute;
-  line-height: 1.3535353535353535353535353535353535353535353535353535353535353535353535;
+  line-height: 1.35;
 }
 .blog-post-title {
   margin-left: 0px;
   font-size: 25px;
+  text-align: left;
 }
 .blog-post-meta {
   margin-top: 6px;
