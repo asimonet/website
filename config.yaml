@@ -2,7 +2,7 @@
 
 # Prefix for all page title
 site_title: Anthony SIMONET
-   
+
 author_name: Anthony SIMONET
 author_email: firstname.lastname@inria.fr
 author_phone: "+33 (0) 2 51 85 82 38"
@@ -11,11 +11,11 @@ author_skype: anthony-simonet
 # Mailing address
 # Two whitespaces ('  ') will be replaced with newline charactters.
 author_address: >
-   École des Mines 
-   Bureau B217  
-   4 rue Alfred Kastler  
-   BP 20 722  
-   44 307 Nantes Cedex 03  
+   École des Mines
+   Bureau B217
+   4 rue Alfred Kastler
+   BP 20 722
+   44 307 Nantes Cedex 03
    France
 
 social:
@@ -42,7 +42,7 @@ links:
   - "ENS Lyon|http://www.ens-lyon.eu"
   - "LIP|http://www.ens-lyon.fr/LIP"
   - "Avalon|http://avalon.ens-lyon.fr/"
-  - "École des Mines|http://www.mines-nantes.fr/"
+  - "Institut Mines-Télécom|http://www.imt-atlantique.fr/"
   - "Active Data|http://active-data.gforge.inria.fr"
 
 ## Blogging
