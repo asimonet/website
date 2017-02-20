@@ -7,8 +7,11 @@
 		<% if pub[:type] == :techreport %>
 			Research Report
 		<% else %>
+         <% puts pub[:type] %>
 			<% if pub[:type] == :poster %>
 				Poster <em>in</em>
+			<% elsif pub[:type] == :short %>
+				Short paper <em>in</em>
 			<% else %>
 				<em>In</em>
 			<% end %>
