@@ -75,7 +75,7 @@ compile '/news/**/*' do
 end
 
 
-compile '/*.{md,htm,html}' do
+compile '**/*.{md,htm,html}' do
 	puts "compiling #{item.identifier.to_s}"
 	if item.identifier.to_s.end_with? '.md'
 		filter :kramdown

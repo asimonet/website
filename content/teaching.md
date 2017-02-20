@@ -16,14 +16,15 @@ description: Current and past coures from Anthony SIMONET, PhD.
 My current teaching is at the [Institut Mines Telecom
 Atlantique](https://www.imt.fr/) in the engineering program:
 
-- Lectures and TP [Amazon Web Services](/teaching/2016/aws/)
+- Lectures and TP of Cloud Computing ([Amazon Web
+  Services](/teaching/2016/aws/))
 - Big Data, MapReduce (Hadoop) with [Shadi Ibrahim](http://people.irisa.fr/Shadi.Ibrahim){:target="_blank"}
 
 ### 2015&nbsp;&mdash;&nbsp;2016
 Teaching at [École des Mines de Nantes](http://www.mines-nantes.fr) in the
 engeineering program:
 
-- Lectures and TP Cloud Computing (Amazon Web Services)
+- Lectures and TP of Cloud Computing (Amazon Web Services)
 - TP Big Data, MapReduce (Hadoop) with [Shadi Ibrahim](http://people.irisa.fr/Shadi.Ibrahim){:target="_blank"}
 
 ### 2012&nbsp;&mdash;&nbsp;2013
