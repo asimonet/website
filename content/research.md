@@ -49,7 +49,7 @@ This page contains some of my present and past professional activities.
 
 ### Journals
 
-* IEEE Cloud Computing Magazine [IEEE
+* IEEE Cloud Computing [IEEE
   CCM](https://www.computer.org/web/computingnow/cloudcomputing)
 * IEEE Transactions on Parallel and Distributed Systems [IEEE
   TPDS](https://www.computer.org/web/tpds)

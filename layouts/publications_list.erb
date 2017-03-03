@@ -18,7 +18,7 @@
 			<% if pub[:journal] then %>
 				<%= pub[:journal] %>.
 			<% elsif pub[:booktitle] then %>
-				<%= pub[:booktitle] %><% if pub[:series] then %> (<em><%= pub[:series] %></em>)<% end %>.
+            <%= pub[:booktitle] %><% if pub[:series] then %> (<em><%= pub[:series] %></em>)<% end %><span class="year">, <%= pub[:year] %></span>.
 			<% end %>
 		<% end %>
 

@@ -8,9 +8,40 @@ description: List of publications from Anthony SIMONET, PhD.
 ---
 
 <div class="blog-main">
-You can download my <a href="/assets/publications/publications.bib" target="_blank">complete bibliography</a> or
-visit my <a href="https://scholar.google.fr/citations?user=wmGPuSgAAAAJ" target="_blank">Google Scholar Profile</a>.
-	<div class="publication-list">
-		<%= publications %>
+   <p>You can download my <a href="/assets/publications/publications.bib"
+      target="_blank">complete bibliography</a> or visit my <a
+      href="https://scholar.google.fr/citations?user=wmGPuSgAAAAJ"
+      target="_blank">Google Scholar Profile</a>.</p>
+
+   <b>Sort by:</b> <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default" id="sort-year">Year</button>
+      <button type="button" class="btn btn-default" id="sort-type">Type</button>
+   </div>
+	<div class="publication-list" style="display: none;" id="list-type">
+		<%= publications 'type' %>
+	</div>
+	<div class="publication-list" id="list-year">
+		<%= publications 'year' %>
 	</div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+   function switchTo(sort) {
+      if($('div#list-' + sort).is(':visible'))
+         return;
+
+      $('div.publication-list:visible').fadeOut(function() {
+         $('div#list-' + sort).fadeIn();
+      });
+   }
+
+   $('button#sort-year').click(function() {
+      switchTo('year');
+    });
+
+   $('button#sort-type').click(function() {
+      switchTo('type');
+    });
+});
+</script>
