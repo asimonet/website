@@ -33,6 +33,7 @@ This page contains some of my present and past professional activities.
 
 ## Technical Program Committee Membership
 
+* [GreenCom 2017](http://cse.stfx.ca/~GreenCom2017), June 21-23rd, 2017, Exeter, UK
 * [I-SPAN 2017](http://cse.stfx.ca/~ISPAN2017/), June 21-23rd, 2017, Exeter, UK
 * [GECON 2015](http://2015.gecon-conference.org/), September 15−17th, 2015, Cluj-Napoca, Romania
 
