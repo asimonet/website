@@ -21,11 +21,11 @@ Atlantique](https://www.imt.fr/) in the engineering program:
 - Big Data, MapReduce (Hadoop) with [Shadi Ibrahim](http://people.irisa.fr/Shadi.Ibrahim){:target="_blank"}
 
 ### 2015&nbsp;&mdash;&nbsp;2016
-Teaching at [École des Mines de Nantes](http://www.mines-nantes.fr) in the
+Teaching at [Institut Mines-Télécom Atlantique](http://www.imt-atlantique.fr) in the
 engeineering program:
 
-- Lectures and TP of Cloud Computing (Amazon Web Services)
-- TP Big Data, MapReduce (Hadoop) with [Shadi Ibrahim](http://people.irisa.fr/Shadi.Ibrahim){:target="_blank"}
+- Lectures and TP of Développement pour le Cloud (Amazon Web Services)
+- TP of Développement pour le Cloud, MapReduce (Hadoop) with [Shadi Ibrahim](http://people.irisa.fr/Shadi.Ibrahim){:target="_blank"}
 
 ### 2012&nbsp;&mdash;&nbsp;2013
 I tought these courses at the [University of Lyon](http://www.univ-lyon1.fr/){:target="_blank"}:
