@@ -27,9 +27,6 @@ This page contains some of my present and past professional activities.
 ## Conference Organization
 
 * TPC Co-Chair for [ICFEC'2017](http://fec-conf.gforge.inria.fr/), May 14th, 2017, Madrid, Spain
-* Track Co-Chair for [Europar
-   2016](https://europar2016.inria.fr/conference/topics/6-cluster-and-cloud-computing/),
-   August 22−26th, 2016, Grenoble
 
 ## Technical Program Committee Membership
 
@@ -42,6 +39,8 @@ This page contains some of my present and past professional activities.
 
 ### Conference proceedings
 
+* International European Conference on Parallel and Distributed Computing [Europar
+  2016](https://europar2016.inria.fr/conference/topics/6-cluster-and-cloud-computing/)
 * International Symposium on Stabilization, Safety and Security of Distributed Systems [SSS 2016](http://avalon.ens-lyon.fr/SSS16/)
 * International Workshop on High Performance Data Intensive Computing [HPDIC 2013](http://cloud.hdu.edu.cn/hpdic2013/)
 * IEEE International Conference on Cloud Computing Technology and Science [CloudCom 2012](http://2012.cloudcom.org/)
