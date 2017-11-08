@@ -4,19 +4,18 @@
 site_title: Anthony SIMONET
 
 author_name: Anthony SIMONET
-author_email: firstname.lastname@inria.fr
-author_phone: "+33 (0) 2 51 85 82 38"
+author_email: firstname.lastname@rutgers.edu
+author_phone: "+1 (848) 445 8924"
 author_skype: anthony-simonet
 
 # Mailing address
 # Two whitespaces ('  ') will be replaced with newline charactters.
 author_address: >
-   École des Mines
-   Bureau A253
-   4 rue Alfred Kastler
-   BP 20 722
-   44 307 Nantes Cedex 03
-   France
+   RDI2  
+   Bush Campus CORE Building Room 627  
+   96 Frelinghuysen Road  
+   Pisctaway, New Jersey 08854  
+   USA
 
 social:
   - id: linkedin
@@ -38,6 +37,7 @@ author_pgp_file: content/asimonet.asc
 
 # Links
 links:
+  - "RDI<sup>2</sup>|http://rdi2.rutgers.edu"
   - "Inria|http://www.inria.fr"
   - "ENS Lyon|http://www.ens-lyon.eu"
   - "LIP|http://www.ens-lyon.fr/LIP"

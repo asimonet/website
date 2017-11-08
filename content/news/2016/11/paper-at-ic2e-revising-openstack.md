@@ -14,7 +14,7 @@ IC2E](http://conferences.computer.org/IC2E/2016/){:target="_blank"})
 conference that will take place in Vancouver, Canada in early April 2017.
 <!--more-->
 
-This paper, coauthored with Adrie Lebre, Jonathan Pastor and Frederic Desprez,
+This paper, coauthored with Adrien Lebre, Jonathan Pastor and Frederic Desprez,
 presents and eveluates a design for a highly distributed **OpenStack** suited for
 Fog/Edge Computing.<br />
 The infrastructures considered here are composed of numerous small data centers

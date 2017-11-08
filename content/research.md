@@ -23,6 +23,10 @@ This page contains some of my present and past professional activities.
 * Talk at the _Large Scale Deployment Challenge_ of the _Grid’5000 Winter School_, Grenoble, 2016
 * Talk at the _Journée OpenStack Workshop_ in Lyon, France, 2016
 * Talk at the _Cloud Control Workshop_, Uppsala, Sweden, 2016
+* Seminar at the _Discovery Plenary Meeting_, Rennes, France, 2016
+* Talk at the _Journée OpenStack Day France_, Paris, 2016
+* Seminar at the _Avalon_ research group of the _LIP_ at the _École Normale
+  Supérieure de Lyon_,Lyon, France, 2017
 
 ## Conference Organization
 
@@ -46,6 +50,8 @@ This page contains some of my present and past professional activities.
 * IEEE International Conference on Cloud Computing Technology and Science [CloudCom 2012](http://2012.cloudcom.org/)
 * IEEE International Conference on e-Science [e-Science
   2012](https://www.ci.uchicago.edu/escience2012/)
+* International Workshop on MapReduce and its Applications [MapReduce
+  2012](http://graal.ens-lyon.fr/mapreduce/)
 
 ### Journals
 
