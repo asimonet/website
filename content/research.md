@@ -27,13 +27,19 @@ This page contains some of my present and past professional activities.
 * Talk at the _Journée OpenStack Day France_, Paris, 2016
 * Seminar at the _Avalon_ research group of the _LIP_ at the _École Normale
   Supérieure de Lyon_,Lyon, France, 2017
+* Invited talk to NJEdge Con, Whippany, New Jersey, 2018
 
 ## Conference Organization
 
+* TPC Co-Chair for InterCloud-HPC 2018, July 16-20th, 2018, Orléans, France
 * TPC Co-Chair for [ICFEC'2017](http://fec-conf.gforge.inria.fr/), May 14th, 2017, Madrid, Spain
 
 ## Technical Program Committee Membership
 
+* [HPCC 2018](http://cse.stfx.ca/~hpcc2018/), June 28-30th, 2018, Exeter, UK
+* [IEEE ICIOT 2018](http://conferences.computer.org/iciot/2018/), July 2-7th, 2018, San Francisco, USA
+* [IEEE BigData Congress 2018](http://conferences.computer.org/bigdatacongress/2018/), July 2-7th, 2018, San Francisco, USA
+* [CloudCom 2017](http://2017.cloudcom.org/), December 11-14th, 2017, Hong Kong, China
 * [GreenCom 2017](http://cse.stfx.ca/~GreenCom2017), June 21-23rd, 2017, Exeter, UK
 * [I-SPAN 2017](http://cse.stfx.ca/~ISPAN2017/), June 21-23rd, 2017, Exeter, UK
 * [GECON 2015](http://2015.gecon-conference.org/), September 15−17th, 2015, Cluj-Napoca, Romania
@@ -43,6 +49,7 @@ This page contains some of my present and past professional activities.
 
 ### Conference proceedings
 
+* International Workshop on Optimization of Energy Efficient HPC & Distributed Systems [OPTIM 2016](http://hpcs2016.cisedu.info/2-conference/workshops---hpcs2016/workshop02-optim)
 * International European Conference on Parallel and Distributed Computing [Europar
   2016](https://europar2016.inria.fr/conference/topics/6-cluster-and-cloud-computing/)
 * International Symposium on Stabilization, Safety and Security of Distributed Systems [SSS 2016](http://avalon.ens-lyon.fr/SSS16/)
@@ -55,8 +62,10 @@ This page contains some of my present and past professional activities.
 
 ### Journals
 
+* IEEE Internet Computing [IEEE
+  IC-CS](http://publications.computer.org/internet-computing/)
 * IEEE Cloud Computing [IEEE
-  CCM](https://www.computer.org/web/computingnow/cloudcomputing)
+  CCM](http://publications.computer.org/cloud-computing/)
 * IEEE Transactions on Parallel and Distributed Systems [IEEE
   TPDS](https://www.computer.org/web/tpds)
 * IEEE Transactions on Services Computing [IEEE
