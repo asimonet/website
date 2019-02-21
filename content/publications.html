@@ -13,9 +13,11 @@ description: List of publications from Anthony SIMONET, PhD.
       href="https://scholar.google.fr/citations?user=wmGPuSgAAAAJ"
       target="_blank">Google Scholar Profile</a>.</p>
 
-   <b>Sort by:</b> <div class="btn-group" role="group">
-      <button type="button" class="btn btn-default" id="sort-year">Year</button>
-      <button type="button" class="btn btn-default" id="sort-type">Type</button>
+   <div id="pub-controls" style="visibility: hidden;">
+      <b>Sort by:</b> <div class="btn-group" role="group">
+         <button type="button" class="btn btn-default" id="sort-year">Year</button>
+         <button type="button" class="btn btn-default" id="sort-type">Type</button>
+      </div>
    </div>
 	<div class="publication-list" style="display: none;" id="list-type">
 		<%= publications 'type' %>
@@ -26,22 +28,23 @@ description: List of publications from Anthony SIMONET, PhD.
 </div>
 
 <script type="text/javascript">
-$(document).ready(function() {
-   function switchTo(sort) {
-      if($('div#list-' + sort).is(':visible'))
-         return;
+document.getElementById('jquery').addEventListener('load', function () {
+      function switchTo(sort) {
+         if($('div#list-' + sort).is(':visible'))
+            return;
 
-      $('div.publication-list:visible').fadeOut(function() {
-         $('div#list-' + sort).fadeIn();
-      });
-   }
+         $('div.publication-list:visible').fadeOut(function() {
+            $('div#list-' + sort).fadeIn();
+         });
+      }
 
-   $('button#sort-year').click(function() {
-      switchTo('year');
-    });
+      $('div#pub-controls').css('visibility','visible').hide().fadeIn('200');
+      $('button#sort-year').click(function() {
+         switchTo('year');
+       });
 
-   $('button#sort-type').click(function() {
-      switchTo('type');
-    });
+      $('button#sort-type').click(function() {
+         switchTo('type');
+       });
 });
 </script>

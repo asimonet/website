@@ -7,65 +7,67 @@
 
 <footer class="blog-footer">
 	<script type='text/javascript'>
-	$(document).ready(function() {
-      $('img.inlay').css("margin-right",-350);
-      $('img.inlay').css("display", "block");
-      $('img.inlay').animate({marginRight:0}, 200, function(){running=0;});
+   document.getElementById('jquery').addEventListener('load', function () {
+      $(document).ready(function() {
+         $('img.inlay').css("margin-right",-350);
+         $('img.inlay').css("display", "block");
+         $('img.inlay').animate({marginRight:0}, 200, function(){running=0;});
 
-      $(window).scroll(function() {
-         var img = $('img.inlay');
-         if(img === undefined)
-            return;
+         $(window).scroll(function() {
+            var img = $('img.inlay');
+            if(img === undefined)
+               return;
 
-         var per = $(window).scrollTop() / $(document).height();
-         var theta = per * Math.PI * 2;
-         img.css({transform: 'rotate(' + theta + 'rad)' });
-         img.css('margin-top', per * 1000);
+            var per = $(window).scrollTop() / $(document).height();
+            var theta = per * Math.PI * 2;
+            img.css({transform: 'rotate(' + theta + 'rad)' });
+            img.css('margin-top', per * 1000);
+         });
+
+         $("a[href='#scroll-top']").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "swing");
+            return false;
+         });
+
+         <% if @item.identifier == '/index.html' %>
+            /*
+            function debounce(func, wait, immediate) {
+               var timeout;
+               return function() {
+                  var context = this, args = arguments;
+                  var later = function() {
+                     timeout = null;
+                     if (!immediate) func.apply(context, args);
+                  };
+                  var callNow = immediate && !timeout;
+                  clearTimeout(timeout);
+                  timeout = setTimeout(later, wait);
+                  if (callNow) func.apply(context, args);
+               };
+            };
+
+            var sidebar = $('.blog-sidebar');
+            var previousLeft = sidebar.offset().left;
+            console.log("Initial position: " + previousLeft);
+
+            $(document).on('scroll', debounce(function(e) {
+               console.log("top: " + $(document).scrollTop());
+   console.log(sidebar.offset().left + " : " + previousLeft);
+
+               if($(document).scrollTop() > 200) {
+                  if(!sidebar.hasClass('fixed-sidebar')) {
+                     previousLeft = sidebar.offset().left;
+                     sidebar.addClass('fixed-sidebar');
+                     sidebar.offset({left: previousLeft});
+                  }
+               }
+               else {
+                  sidebar.removeClass('fixed-sidebar');
+               }
+            }, 5));
+            */
+         <% end %>
       });
-
-		$("a[href='#scroll-top']").click(function() {
-			$("html, body").animate({ scrollTop: 0 }, "swing");
-			return false;
-		});
-
-		<% if @item.identifier == '/index.html' %>
-			/*
-			function debounce(func, wait, immediate) {
-				var timeout;
-				return function() {
-					var context = this, args = arguments;
-					var later = function() {
-						timeout = null;
-						if (!immediate) func.apply(context, args);
-					};
-					var callNow = immediate && !timeout;
-					clearTimeout(timeout);
-					timeout = setTimeout(later, wait);
-					if (callNow) func.apply(context, args);
-				};
-			};
-
-			var sidebar = $('.blog-sidebar');
-			var previousLeft = sidebar.offset().left;
-			console.log("Initial position: " + previousLeft);
-
-			$(document).on('scroll', debounce(function(e) {
-				console.log("top: " + $(document).scrollTop());
-console.log(sidebar.offset().left + " : " + previousLeft);
-
-				if($(document).scrollTop() > 200) {
-					if(!sidebar.hasClass('fixed-sidebar')) {
-						previousLeft = sidebar.offset().left;
-						sidebar.addClass('fixed-sidebar');
-						sidebar.offset({left: previousLeft});
-					}
-				}
-				else {
-					sidebar.removeClass('fixed-sidebar');
-				}
-			}, 5));
-			*/
-		<% end %>
 	});
 	</script>
 	<p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
@@ -79,19 +81,23 @@ console.log(sidebar.offset().left + " : " + previousLeft);
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="<%= items['/assets/js/jquery.min.js'].path %>"></script>
-	<script src="<%= items['/assets/js/bootstrap.min.js'].path %>"></script>
+	<script async id="jquery" src="<%= items['/assets/js/jquery.min.js'].path %>"></script>
+	<script async src="<%= items['/assets/js/bootstrap.min.js'].path %>"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="<%= items['/assets/js/ie10-viewport-bug-workaround.js'].path %>"></script>
+	<script async src="<%= items['/assets/js/ie10-viewport-bug-workaround.js'].path %>"></script>
 
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-27551801-1', 'auto');
-	ga('send', 'pageview');
-</script>
+   <script type="text/javascript">
+        var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+         var u="//analytics.anthony-simonet.fr/";
+         _paq.push(['setTrackerUrl', u+'piwik.php']);
+         _paq.push(['setSiteId', '1']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+       })();
+   </script>
   </body>
 </html>
