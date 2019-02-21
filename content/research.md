@@ -31,11 +31,17 @@ This page contains some of my present and past professional activities.
 
 ## Conference Organization
 
-* TPC Co-Chair for InterCloud-HPC 2018, July 16-20th, 2018, Orléans, France
+* TPC Co-Chair for [InterCloud-HPC 2019](http://hpcs2019.cisedu.info/2-conference/symposia/symp01-intercloudhpc), July 15-19th, 2019, Dublin, Ireland
+* Workshops Co-Chair for [HiPC 2018](http://hipc.org/), December 17-20th, 2018, Bengaluru, India
+* TPC Co-Chair for [InterCloud-HPC 2018](http://hpcs2018.cisedu.info/2-conference/symposia---hpcs2018/symp01-intercloudhpc), July 16-20th, 2018, Orléans, France
 * TPC Co-Chair for [ICFEC'2017](http://fec-conf.gforge.inria.fr/), May 14th, 2017, Madrid, Spain
 
 ## Technical Program Committee Membership
 
+* [IEEE BigData Congress 2019](http://conferences.computer.org/bigdatacongress/2019/), July 8-13th, 2018, Milan, Italy
+* [IEEE ICIOT 2019](http://conferences.computer.org/iciot/2019/), July 8-13th, 2018, Milan, Italy
+* [CCGrid 2019](http://www.ccgrid2019.org/), May 14-17th, 2019, Larnaca, Cyprus
+* [CloudCom 2018](http://cyprusconferences.org/cloudcom2018/), December 10-13th, 2018, Nicosia, Cyprus
 * [HPCC 2018](http://cse.stfx.ca/~hpcc2018/), June 28-30th, 2018, Exeter, UK
 * [IEEE ICIOT 2018](http://conferences.computer.org/iciot/2018/), July 2-7th, 2018, San Francisco, USA
 * [IEEE BigData Congress 2018](http://conferences.computer.org/bigdatacongress/2018/), July 2-7th, 2018, San Francisco, USA
@@ -62,14 +68,19 @@ This page contains some of my present and past professional activities.
 
 ### Journals
 
+* IEEE Transactions on Parallel and Distributed Systems [IEEE
+  TPDS](https://www.computer.org/web/tpds)
+* IEEE Transactions on Cloud Computing [IEEE
+  TPDS](https://www.computer.org/web/tcc)
+* IEEE Transactions on Big Data [IEEE
+  TBD](https://www.computer.org/web/tbd)
 * IEEE Internet Computing [IEEE
   IC-CS](http://publications.computer.org/internet-computing/)
 * IEEE Cloud Computing [IEEE
   CCM](http://publications.computer.org/cloud-computing/)
-* IEEE Transactions on Parallel and Distributed Systems [IEEE
-  TPDS](https://www.computer.org/web/tpds)
 * IEEE Transactions on Services Computing [IEEE
   TSC](https://www.computer.org/web/tsc)
+* ACM Transactions on Internet Technology [ACM TOIT](https://toit.acm.org/)
 
 </div>
 </div>
